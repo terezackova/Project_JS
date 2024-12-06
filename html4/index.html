@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Přepínač teploty</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="form-container">
+        <h1>Přepínač teploty</h1>
+        <div class="input-container">
+            <label for="tempInput">Zadejte hodnotu:</label>
+            <input type="number" id="tempInput" placeholder="Zadejte teplotu">
+        </div>
+        <div class="input-container">
+            <label for="unitSelector">Vyberte jednotku:</label>
+            <select id="unitSelector">
+                <option value="Celsius">Celsius (°C)</option>
+                <option value="Fahrenheit">Fahrenheit (°F)</option>
+            </select>
+        </div>
+        <button onclick="convertTemperature()">Přepočítat</button>
+        <div class="temperature-output" id="output"></div>
+        <div id="seasonIcon" class="season-icon"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
